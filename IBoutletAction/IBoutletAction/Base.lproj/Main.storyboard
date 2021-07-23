@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBoutletAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-gG-qjw" userLabel="Pushbutton">
+                                <rect key="frame" x="235.5" y="500" width="339" height="80"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="44"/>
+                                <state key="normal" title="Press to continue"/>
+                                <connections>
+                                    <action selector="pushbuttonToDo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKO-XQ-LSJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCF-se-ENl" userLabel="message">
+                                <rect key="frame" x="405" y="460" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gCF-se-ENl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="beH-Td-waB"/>
+                            <constraint firstItem="Dsv-gG-qjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTT-EU-tLt"/>
+                            <constraint firstItem="Dsv-gG-qjw" firstAttribute="top" secondItem="gCF-se-ENl" secondAttribute="bottom" constant="40" id="fvP-ef-64z"/>
+                            <constraint firstItem="Dsv-gG-qjw" firstAttribute="top" secondItem="gCF-se-ENl" secondAttribute="bottom" constant="40" id="gjj-p6-Xa8"/>
+                            <constraint firstItem="Dsv-gG-qjw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="siK-YC-dCx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="gCF-se-ENl" id="mje-d3-K3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.703703703703702" y="62.777777777777779"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
